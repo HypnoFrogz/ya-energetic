@@ -34,7 +34,7 @@ class Document:
                 continue
 
         if parsed_date is None:
-            raise ValueError("DocumentDate должен быть в формате 'ГГГГ-ММ-ДД' или 'ДД.ММ.ГГГГ'")
+            raise ValueError("DocumentExpiresIn должен быть в формате 'ГГГГ-ММ-ДД' или 'ДД.ММ.ГГГГ'")
 
         formatted_expires_document = parsed_date.strftime("%Y-%m-%d")
 
